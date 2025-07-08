@@ -1,4 +1,4 @@
-# Project Structure Summary
+# Project Structure
 
 ## Image-to-WebP MCP Server
 
@@ -15,8 +15,6 @@ image-webp-mcp-server/
 ├── LICENSE                     # MIT License
 ├── .gitignore                  # Git ignore rules
 ├── test_server.py              # Test suite for the server
-├── setup_git.sh               # Bash script to initialize git
-├── setup_git.ps1              # PowerShell script to initialize git
 └── PROJECT_STRUCTURE.md       # This file
 ```
 
