@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  image-webp-mcp-server:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount a directory for images to be processed
+      - ./images:/images
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/mcp"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
